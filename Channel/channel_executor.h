@@ -7,7 +7,15 @@
 * 其主要作用就是封装计算信道响应矩阵的各个参数
 * 将其传递给信道计算引擎
 */
-class channel_job {
+class channel_job_detail {
+
+};
+
+/*
+* 信道计算结果类
+* 其主要作用就是封装信道响应计算结果的各个参数
+*/
+class channel_output_dto {
 
 };
 
@@ -19,6 +27,12 @@ public:
 	* t_pool_num：缓存池最大的线程数量
 	*/
 	static channel_executor* new_cached_pool_channel_executor(int t_pool_num);
+
+public:
+	/*
+	* 计算信道响应
+	*/
+	virtual channel_output_dto* calculate(channel_job_detail* t_channel_job_detail) = 0;
 
 };
 
