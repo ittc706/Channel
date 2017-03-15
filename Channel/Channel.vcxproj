@@ -18,6 +18,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="channel_executor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="channel_executor.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{82F60CA8-AA99-412E-9F86-32F3AB2043E1}</ProjectGuid>
     <RootNamespace>Channel</RootNamespace>
@@ -117,13 +124,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="channel_executor.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="channel_executor.cpp" />
-    <ClCompile Include="test.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
